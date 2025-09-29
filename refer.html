@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adani Corporation - Refer & Earn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
+  <aside id="sideMenu" class="side-menu">
+      <div class="sidebar-header"><div id="sidebarId">Loading...</div><div id="sidebarVIP">...</div></div>
+      <div class="sidebar-actions">
+        <button class="sidebar-btn"><span>🧑‍💼</span> Customer Support</button>
+        <button class="sidebar-btn"><span>💬</span> Telegram Channel</button>
+        <button class="sidebar-btn"><span>⚙️</span> Settings</button>
+      </div>
+      <span id="closeBtn" class="close-btn">&times;</span>
+  </aside>
+  <header class="top-bar">
+    <div id="menuBtn" class="menu-btn"><span></span><span></span><span></span></div>
+    Refer & Earn
+  </header>
+  <main class="refer-page-container">
+    <div class="card refer-main-card">
+      <h2>Invite Friends, Earn Rewards!</h2>
+      <p>Share your unique link with friends to earn commission rewards.</p>
+      <div class="refer-link-box">
+        <span id="referralLink">Loading your link...</span>
+        <button id="copyLinkBtn" title="Copy to clipboard"><span>Copy</span></button>
+      </div>
+    </div>
+    <div class="card commission-card">
+        <h3>Commission Levels</h3>
+        <div class="levels-container">
+            <div class="level-display"><span class="level-title">Level 1</span><span class="level-percent">21%</span></div>
+            <div class="level-display"><span class="level-title">Level 2</span><span class="level-percent">3%</span></div>
+            <div class="level-display"><span class="level-title">Level 3</span><span class="level-percent">1%</span></div>
+        </div>
+    </div>
+    <div class="card team-card">
+        <h3>My Team</h3>
+        <div class="team-tabs">
+            <button class="team-tab active" data-level="1">Level 1</button>
+            <button class="team-tab" data-level="2">Level 2</button>
+            <button class="team-tab" data-level="3">Level 3</button>
+        </div>
+        <div class="team-content">
+            <div class="team-level-content active" id="level1Content">
+                <p>Total Members: <strong id="level1Count">0</strong></p>
+                <div class="team-list-header">
+                    <span>Phone Number</span>
+                    <span>Recharge Status</span>
+                </div>
+                <div class="team-list-container" id="level1List"></div>
+            </div>
+            <div class="team-level-content" id="level2Content"><p>Total Members: <strong id="level2Count">0</strong></p></div>
+            <div class="team-level-content" id="level3Content"><p>Total Members: <strong id="level3Count">0</strong></p></div>
+        </div>
+    </div>
+  </main>
+  <div class="bottom-nav-spacer"></div>
+  <footer class="bottom-nav">
+    <a href="index.html">Home</a><a href="recharge.html">Recharge</a><a href="refer.html" class="active">Refer</a><a href="mine.html">Mine</a>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="firebaseConfig.js"></script>
+  <script src="common.js"></script>
+  <script src="script-refer.js"></script>
+</body>
+</html>
